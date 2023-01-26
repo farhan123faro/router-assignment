@@ -18,20 +18,8 @@ function Navbar() {
         <li className="nav-item">
           <Link className="nav-link" to="second">Second page</Link>
         </li>
-        <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" to="third" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Third page
-          </Link>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item" to="third">for third page click here</Link></li>
-            <li><Link className="dropdown-item" to="thirdchild">Child of third page</Link></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
+        
+        
       </ul>
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>

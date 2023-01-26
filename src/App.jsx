@@ -3,8 +3,12 @@ import{Routes,Route} from "react-router-dom";
 import Login from "./component/Login";
 import Main from "./component/Main";
 import Secondpage from "./component/Secondpage";
-import Thirdpage from "./component/Thirdpage";
-import Childofthird from "./component/Childofthird";
+import Mainchild from "./component/Mainchild"
+import Mainchild2 from "./component/Mainchild2"
+import Secondchild1 from "./component/Secondchild1"
+import Secondchild2 from "./component/Secondchild2"
+
+
 function App() {
  
   return (
@@ -13,10 +17,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Login/>}/>
         <Route path="main" element={<Main/>}>
-          <Route path="second" element={<Secondpage/>}/>
+         <Route path="mchild1" element={<Mainchild/>}/>
+         <Route path="mchild2" element={<Mainchild2/>}/>
         </Route>
-        <Route path="third" element={<Thirdpage/>}>
-          <Route path="thirdchild" element={<Childofthird/>}/>
+        <Route path="second" element={<Secondpage/>}>
+         <Route path="schild1" element={<Secondchild1/>}/>
+         <Route path="schild2" element={<Secondchild2/>}/>
+
         </Route>
 
       </Routes>
